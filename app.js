@@ -10,6 +10,7 @@ const app = Vue.createApp({
             linkPhoto: 'https://photo-works.net/images/effects-2/effect-2-5.jpg',
             inputValue: 'Test111',
             counter: 0
+            
         };
     },
     methods: {
@@ -31,6 +32,13 @@ const app = Vue.createApp({
         },
         randomNumber() {
             return Math.random()
+        },
+        add(num) {
+            // num=5;
+            this.counter=this.counter + num
+        },
+        minus() {
+            this.counter--
         }
     }  
 });

@@ -14,6 +14,18 @@
      <h1>{{ goal() }}</h1>
      <p v-html="goal()"></p>
    </div>
+   
+   <div class="card">
+    <h1>{{yourName}}</h1>
+    <p>{{yourAge}}</p>
+    <p>{{yourAge +5}}</p>
+    <p>Favorite number {{ Math.random() }}</p>
+    <div>
+      <img v-bind:src="linkPhoto">
+    </div>
+    <input type="text" v-bind:value="inputValue">
+    <p>Typed {{this.inputValue}}</p>
+  </div>
  </div>
     <script src="https://unpkg.com/vue@next"></script>
     <script src="app.js"></script>

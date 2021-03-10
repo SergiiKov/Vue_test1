@@ -9,7 +9,8 @@ const app = Vue.createApp({
             yourAge: 30,
             linkPhoto: 'https://photo-works.net/images/effects-2/effect-2-5.jpg',
             inputValue: 'Test111',
-            counter: 0
+            counter: 0,
+            yourName2: ''
             
         };
     },
@@ -39,6 +40,9 @@ const app = Vue.createApp({
         },
         minus() {
             this.counter--
+        },
+        inputName(event) {
+            this.yourName2 = event.target.value;
         }
     }  
 });

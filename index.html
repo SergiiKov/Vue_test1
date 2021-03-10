@@ -12,6 +12,7 @@
      <h1>{{ myTitle }}</h1>
      <p>{{  outputGoal() }} <a v-bind:href="vueLinck">About Vue</a></p>
      <h1>{{ goal() }}</h1>
+     <p v-html="goal()"></p>
    </div>
  </div>
     <script src="https://unpkg.com/vue@next"></script>

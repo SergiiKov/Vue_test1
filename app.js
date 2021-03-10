@@ -4,7 +4,7 @@ const app = Vue.createApp({
             myTitle: 'Старт Vue',
             vueLinck: 'https://vuejs.org/',
             goalA: 'Закінчити курс і Вивчити Вю',
-            goalB: 'Закінчити курс і написати сайт на Вю'
+            goalB: '<h3>Закінчити курс і написати сайт на Вю</h3>'
         };
     },
     methods: {

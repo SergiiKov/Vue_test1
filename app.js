@@ -10,7 +10,8 @@ const app = Vue.createApp({
             linkPhoto: 'https://photo-works.net/images/effects-2/effect-2-5.jpg',
             inputValue: 'Test111',
             counter: 0,
-            yourName2: ''
+            yourName2: '',
+            confirmedName: ''
             
         };
     },
@@ -43,6 +44,13 @@ const app = Vue.createApp({
         },
         inputName(event) {
             this.yourName2 = event.target.value;
+        },
+        submitText(event) {
+            // event.preventDefault();
+            alert('All ok')
+        },
+        confirmInput() {
+            this.confirmedName = this.yourName2
         }
     }  
 });

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue Basics</title>
+    <link rel="stylesheet" href="theme.css" />
+  </head>
+  <body>
+ <div class="container" id="app">
+   <div class="card">
+     <h1>{{ myTitle }}</h1>
+     <p>{{  outputGoal() }} <a v-bind:href="vueLinck">About Vue</a></p>
+     <h1>{{ goal() }}</h1>
+   </div>
+ </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

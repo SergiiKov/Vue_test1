@@ -19,12 +19,18 @@
     <h1>{{yourName}}</h1>
     <p>{{yourAge}}</p>
     <p>{{yourAge +5}}</p>
-    <p>Favorite number {{ Math.random() }}</p>
+    <p>Favorite number {{ randomNumber() }}</p>
     <div>
       <img v-bind:src="linkPhoto">
     </div>
     <input type="text" v-bind:value="inputValue">
     <p>Typed {{this.inputValue}}</p>
+  </div>
+  <div class="card">
+    <h1>counter</h1>
+    <button class="btn" v-on:click="counter++">+</button>
+    <button class="btn" v-on:click="counter--">-</button>
+    <p>reslt: {{ counter }}</p>
   </div>
  </div>
     <script src="https://unpkg.com/vue@next"></script>

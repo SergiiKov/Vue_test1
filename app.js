@@ -8,7 +8,8 @@ const app = Vue.createApp({
             yourName: 'Sergii',
             yourAge: 30,
             linkPhoto: 'https://photo-works.net/images/effects-2/effect-2-5.jpg',
-            inputValue: ''
+            inputValue: 'Test111',
+            counter: 0
         };
     },
     methods: {
@@ -27,6 +28,9 @@ const app = Vue.createApp({
             } else {
                 return this.goalB
             }
+        },
+        randomNumber() {
+            return Math.random()
         }
     }  
 });

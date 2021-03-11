@@ -33,6 +33,7 @@
     <!-- <button class="btn" v-on:click.right="add(5)">+</button>
     <button class="btn" v-on:click.left="minus">-</button> -->
     <p>reslt: {{ counter }}</p>
+    <p v-once>starting: {{ counter }}</p>
     <input type="text" v-on:input="inputName" v-on:keyup.enter="confirmInput">
     <p>Name: {{ confirmedName }}</p>
     <form v-on:submit.prevent="submitText">
